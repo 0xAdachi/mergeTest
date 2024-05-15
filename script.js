@@ -1,13 +1,21 @@
 "use strict";
 
-function feature2() {
-  // do some other code
-  let x = 5;
-  let y = 4;
-  console.log(x+y);
+async function loadAllImages() {
+  if (depth >= this.maxDepth) return;
+
+  node.nodeLeft = new Node(2 * node.value);
+  this.constructBinaryTree(node.nodeLeft, depth + 1)
+  node.nodeRight = new Node((2 * node.value) + 1);
+  this.constructBinaryTree(node.nodeRight, depth + 1)
 }
 
-function foo() {
-  let something = 7;
-  return something;
+function main() {
+  window.location.reload();
+}
+
+function bar() {
+  if(x > cwidth - boxWidth) dx = -dx;
+  if(x < 0) dx = -dx;
+  if(y > cheight - boxHeight) dy = -dy;
+  if(y < 0) dy = -dy;
 }
