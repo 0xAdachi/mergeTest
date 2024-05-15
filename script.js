@@ -13,3 +13,20 @@ function foo() {
   let something = 7;
   return something;
 }
+
+function main() {
+ loadAllImages();
+}
+
+async function loadAllImages() {
+  try {
+    await loadImage(bgImg, "./assets/bg.png");
+    await loadImage(playerImg, "./assets/adachi.png");
+    await loadImage(pipeImg, "./assets/shimamura.png");
+    animationLoop();
+    scoreboard.style.visibility = "visible";
+    loadingScreen.style.display = "none";
+  } catch (error) {
+    console.error("Loading Images Failed", error);
+  }
+}
