@@ -1,5 +1,5 @@
 "use strict";
 
-function feature1() {
-  // do some code
+function feature2() {
+  // do some other code
 }
